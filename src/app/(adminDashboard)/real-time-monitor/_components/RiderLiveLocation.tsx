@@ -63,7 +63,7 @@ const createMarkerSVG = (color: string, isTriangle: boolean): string => {
 export function RiderLiveLocation() {
   const { isLoaded } = useJsApiLoader({
     id: "google-map-script",
-    googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY!, // Placeholder for API key
+    googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAP_KEY!, // Placeholder for API key
   })
 
   const [map, setMap] = useState(null)
